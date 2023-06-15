@@ -1,0 +1,151 @@
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+
+    margin: 0;
+}
+
+
+body {
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.container {
+
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+
+
+    width: 50%;
+
+
+
+}
+
+.container i {
+
+    font-size: 30px;
+    width: 100%;
+    display: flex;
+
+
+   align-items: center;
+   justify-content: center;
+    margin: auto;
+
+    height: 20%;
+
+}
+
+.fa-twitter {
+
+    color: lightskyblue;
+    animation: twitter 2000ms ease-in-out infinite;
+  
+}
+
+
+
+.fa-heart {
+    color: lightcoral;
+    animation: heart 2000ms ease-in-out infinite;
+}
+
+.fa-message {
+    color: lightgreen;
+    animation: green-message 2000ms ease-in-out infinite;
+}
+
+.fa-dollar-sign {
+
+    color: gray;
+    animation: dollar 2000ms ease-in-out  1000ms infinite;
+}
+
+.fa-envelope {
+    color: blueviolet;
+    animation: purple-message 300ms ease-in-out infinite;
+ 
+}
+
+
+@keyframes twitter {
+
+    0% {
+        transform: rotate(0deg) translateY(300px);
+    }
+
+    100% {
+
+        transform: rotate(360deg);
+    }
+    
+}
+
+
+
+@keyframes heart {
+
+    0% {
+        transform: translateY(300px);
+    }
+
+    100% {
+
+        transform: translateY(0) ;
+    }
+    
+}
+
+@keyframes green-message {
+
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+
+        transform: translateY(600px);
+    }
+    
+}
+
+
+@keyframes dollar {
+
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+
+        transform: scale(1.5);
+    }
+    
+}
+
+
+@keyframes purple-message {
+
+    0% {
+        transform: translateX(0px);
+    }
+
+    100% {
+
+        transform: translateX(5px);
+    }
+    
+}
